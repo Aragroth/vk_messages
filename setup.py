@@ -2,7 +2,8 @@ from distutils.core import setup
 setup(
   name = 'vk_messages',    
   packages = ['vk_messages'],   
-  license='MIT',      
+  license='MIT',
+  version = '0.1', 
   description = 'Custom library to pass messages API restriction',  
   author = 'Aragroth (Osiris)',                  
   author_email = 'aragroth.osiris@yandex.ru',   
