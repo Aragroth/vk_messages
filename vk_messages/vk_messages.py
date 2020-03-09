@@ -124,7 +124,7 @@ class MessagesAPI():
         response = session.get(f'https://vk.com/dev/{name}', cookies=self.cookies_final)
         hash_data =  re.findall(r'data-hash="(\S*)"', response.text)
 
-        soup = BeautifulSoup(response.text, features="lxml")
+        soup = BeautifulSoup(response.text, features="html.parser")
         params = soup.findAll("div", {"class": "dev_const_param_name"})
         params = [cleanhtml(str(i)) for i in params]
 
