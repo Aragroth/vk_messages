@@ -3,8 +3,6 @@ import time
 import json
 import requests
 import sys, os
-from pprint import pprint
-
 
 def get_random(): return int(time.time() * 10000)
 
