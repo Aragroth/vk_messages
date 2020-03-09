@@ -12,6 +12,7 @@ setup(
   keywords = ['API', 'PYTHON', 'VK'],  
   install_requires=[      
           'requests',
+          'bs4',
       ],
   classifiers=[
     'Development Status :: 4 - Beta',     
