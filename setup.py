@@ -11,8 +11,6 @@ setup(
   download_url = 'https://github.com/Aragroth/vk_messages/releases/tag/v_01',   
   keywords = ['API', 'PYTHON', 'VK'],  
   install_requires=[      
-          'urllib',
-          'pickle',
           'requests',
       ],
   classifiers=[
