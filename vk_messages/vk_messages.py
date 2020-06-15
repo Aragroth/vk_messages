@@ -23,7 +23,7 @@ class MessagesAPI():
     '''
     def __init__(self, login, password, two_factor=False, cookies_save_path=''):
         self.login = login
-        self.password = str(password.encode('ANSI')).replace('\\x', '%')[2:-1]
+        self.password = str(password.encode('UTF-8')).replace('\\x', '%')[2:-1]
         self.two_factor = two_factor
 
         if len(cookies_save_path)!= 0 and cookies_save_path[-1] not in ["/", "\\", '']:
