@@ -9,7 +9,7 @@ setup(
     author='Aragroth (Osiris)',
     author_email='aragroth.osiris@yandex.ru',
     url='https://github.com/Aragroth/vk_messages/',
-    download_url='https://github.com/Aragroth/vk_messages/releases/tag/v_01',
+    download_url='https://github.com/Aragroth/vk_messages/releases/tag/v1.3',
     keywords=['API', 'PYTHON', 'VK'],
     install_requires=[
         'requests',
