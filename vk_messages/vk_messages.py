@@ -92,7 +92,7 @@ class MessagesAPI():
         response = self.main_session.get(f'https://vk.com/login?act=authcheck',
                                                         cookies=self.main_session.cookies.get_dict())
 
-        hash_url =  re.findall(r"\"hash\":\s{0,}\"(\S*)\"},", str(response.text))
+        hash_url = re.findall(r"Authcheck\.init\('([a-z_0-9]+)'", str(response.text))
         if hash_url == []:
             raise Exception_MessagesAPI('Invalid login data or wrong auth method', 'LoginError')
         hash_url = hash_url[0]
